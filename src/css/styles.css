@@ -86,4 +86,9 @@
     #collapsibleNavId ul{
         gap: 0;
     }
+
+    .secretLiar{
+        width: 350px;
+        height: auto;
+    }
 }
