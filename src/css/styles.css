@@ -58,6 +58,10 @@
     height: auto;
 }
 
+.title{
+    margin: 0;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -90,5 +94,9 @@
     .secretLiar{
         width: 350px;
         height: auto;
+    }
+
+    .filter{
+        border-bottom: 1px solid #CCCCCC;
     }
 }

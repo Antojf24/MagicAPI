@@ -19,9 +19,9 @@
         <nav class="navbar navbar-expand-sm navbar-light bg-black" id="navbar">
             <div class="container-fluid">
                 <img src="../img/magic-logo.png" alt="Logo" class="logo" id="responsive">
-                <button class="navbar-toggler d-lg-none bg-dark-subtle " type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-dark navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavId">
                     <ul class="navbar-nav">
@@ -42,62 +42,60 @@
                 </div>
             </div>
         </nav>
-        <aside class="col-sm-3">
-            <div class="card">
-                <article class="card-group-item">
-                    <header class="card-header">
-                        <h6 class="title">Set</h6>
-                    </header>
+        <aside class="col-sm-3 filter">
+            <div class="card rounded-0 border-0">
+                <button class="navbar-toggler card-group-item" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleExpansionId" aria-controls="collapsibleExpansionId"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <header class="card-header rounded-0">Expansion Sets</header>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="collapsibleExpansionId">
                     <div class="filter-content">
                         <div class="card-body">
-                        <label class="form-check">
-                          <input class="form-check-input" type="radio" name="exampleRadio" value="">
-                          <span class="form-check-label">
-                            First hand items
-                          </span>
-                        </label>
-                        <label class="form-check">
-                          <input class="form-check-input" type="radio" name="exampleRadio" value="">
-                          <span class="form-check-label">
-                            Brand new items
-                          </span>
-                        </label>
-                        <label class="form-check">
-                          <input class="form-check-input" type="radio" name="exampleRadio" value="">
-                          <span class="form-check-label">
-                            Some other option
-                          </span>
-                        </label>
+                            <label class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadio" value="">
+                                <span class="form-check-label">First hand items</span>
+                            </label>
+                            <label class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadio" value="">
+                                <span class="form-check-label">Brand new items</span>
+                            </label>
+                            <label class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadio" value="">
+                                <span class="form-check-label">Some other option</span>
+                            </label>
                         </div>
                     </div>
-                </article>
-                <article class="card-group-item">
-                    <header class="card-header"><h6 class="title">Color check</h6></header>
+                </div>
+                <button class="navbar-toggler card-group-item" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleColorId" aria-controls="collapsibleColorId"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <header class="card-header rounded-0">Cards color</header>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="collapsibleColorId">
                     <div class="filter-content">
                         <div class="card-body">
-                            <label class="btn btn-danger">
-                              <input class="" type="checkbox" name="myradio" value="">
-                              <span class="form-check-label">Red</span>
+                            <label class="btn btn-danger buttons">
+                                <input class="" type="checkbox" name="myradio" value="">
+                                <span class="form-check-label">Red</span>
                             </label>
-                            <label class="btn btn-success">
-                              <input class="" type="checkbox" name="myradio" value="">
-                              <span class="form-check-label">Green</span>
+                            <label class="btn btn-success buttons">
+                                <input class="" type="checkbox" name="myradio" value="">
+                                <span class="form-check-label">Green</span>
                             </label>
-                            <label class="btn btn-primary">
-                              <input class="" type="checkbox" name="myradio" value="">
-                              <span class="form-check-label">Blue</span>
+                            <label class="btn btn-primary buttons">
+                                <input class="" type="checkbox" name="myradio" value="">
+                                <span class="form-check-label">Blue</span>
                             </label>
-                            <label class="btn btn-light">
+                            <label class="btn btn-light buttons">
                                 <input class="" type="checkbox" name="myradio" value="">
                                 <span class="form-check-label">White</span>
                             </label>
                             <label class="btn btn-dark">
-                            <input class="" type="checkbox" name="myradio" value="">
-                            <span class="form-check-label">Black</span>
+                                <input class="" type="checkbox" name="myradio" value="">
+                                <span class="form-check-label">Black</span>
                             </label>
                         </div>
                     </div>
-                </article>
+                </div>
             </div>
         </aside>
     </body>
