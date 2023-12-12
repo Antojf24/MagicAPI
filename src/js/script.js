@@ -68,6 +68,9 @@ fetch(TYPES_API)
 function createCards(cards) {
   for (let i = 0; i < cards.length; i++) {
     let card = cards[i];
+    if(!card.imageUrl){
+      continue;
+    }
     let cardElement = document.createElement("div");
     cardElement.className = "col-4 d-flex justify-content-center align-items-center flex-column";
     cardElement.innerHTML = `
