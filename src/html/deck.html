@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="shortcut icon" href="../img/magic-favicon.png" type="image/png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"
+            defer></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css"
+            integrity="sha512-KOWhIs2d8WrPgR4lTaFgxI35LLOp5PRki/DxQvb7mlP29YZ5iJ5v8tiLWF7JLk5nDBlgPP1gHzw96cZ77oD7zQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <script src="../js/deck.js" defer></script>
+        <title>Deck</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm navbar-light bg-black" id="navbar">
+            <div class="container-fluid">
+                <img src="../img/magic-logo.png" alt="Logo" class="logo" id="responsive">
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-dark navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavId">
+                    <ul class="navbar-nav">
+                        <li class="navitem nav-item">
+                            <a class="nav-link active text-light" href="../../index.html" aria-current="page"><strong>Home</strong></a>
+                        </li>
+                        <li class="navitem nav-item">
+                            <a class="nav-link text-light" href="./cards.html"><strong>Cards</strong><span class="visually-hidden">(current)</span></a>
+                        </li>
+                        <img src="../img/magic-logo.png" alt="Logo" class="logo">
+                        <li class="navitem nav-item">
+                            <a class="nav-link text-light" href="#"><strong>My deck</strong></a>
+                        </li>
+                        <li class="navitem nav-item">
+                            <a class="nav-link text-light" href="https://magicthegathering.io/"><strong>Info</strong></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="container-fluid row d-flex justify-content-center align-items-center flex-wrap g-2" id="cards-container">
+
+            </div>
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <div class="col-md-4 d-flex align-items-center">
+                    <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Wizards of the Coast</span>
+                </div>
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                    <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa-brands fa-instagram fa-xl" style="color: #595C5F;"></i></a></li>
+                    <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa-brands fa-twitter fa-xl" style="color: #595C5F;"></i></a></li>
+                    <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa-brands fa-facebook fa-xl" style="color: #595C5F;"></i></a></li>
+                </ul>
+            </footer>
+        </div>
+    </body>
+</html>

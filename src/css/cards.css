@@ -1,8 +1,23 @@
-.filter{
-    min-height: 90.3vh;
-    border-right: 1px solid #CCCCCC;
-}
-
 .buttons{
     margin-bottom: 5px;
+}
+
+#sets-chooser{
+    max-height: 40vh;
+    overflow-y: scroll;
+}
+
+#type-chooser{
+    max-height: 42vh;
+    overflow-y: scroll;
+}
+
+.img{
+    width: 250px !important;
+}
+
+@media screen and (max-width: 576px) {
+    .img{
+        width: 100% !important;
+    }
 }

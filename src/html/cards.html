@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css"
             integrity="sha512-KOWhIs2d8WrPgR4lTaFgxI35LLOp5PRki/DxQvb7mlP29YZ5iJ5v8tiLWF7JLk5nDBlgPP1gHzw96cZ77oD7zQ=="
             crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <script src="../js/script.js" defer></script>
         <title>Cards</title>
     </head>
     <body>
@@ -33,7 +34,7 @@
                         </li>
                         <img src="../img/magic-logo.png" alt="Logo" class="logo">
                         <li class="navitem nav-item">
-                            <a class="nav-link text-light" href="#"><strong>My deck</strong></a>
+                            <a class="nav-link text-light" href="./deck.html"><strong>My deck</strong></a>
                         </li>
                         <li class="navitem nav-item">
                             <a class="nav-link text-light" href="https://magicthegathering.io/"><strong>Info</strong></a>
@@ -42,61 +43,48 @@
                 </div>
             </div>
         </nav>
-        <aside class="col-sm-3 filter">
-            <div class="card rounded-0 border-0">
-                <button class="navbar-toggler card-group-item" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleExpansionId" aria-controls="collapsibleExpansionId"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <header class="card-header rounded-0">Expansion Sets</header>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="collapsibleExpansionId">
-                    <div class="filter-content">
-                        <div class="card-body">
-                            <label class="form-check">
-                                <input class="form-check-input" type="radio" name="exampleRadio" value="">
-                                <span class="form-check-label">First hand items</span>
-                            </label>
-                            <label class="form-check">
-                                <input class="form-check-input" type="radio" name="exampleRadio" value="">
-                                <span class="form-check-label">Brand new items</span>
-                            </label>
-                            <label class="form-check">
-                                <input class="form-check-input" type="radio" name="exampleRadio" value="">
-                                <span class="form-check-label">Some other option</span>
-                            </label>
+        <div class="container-fluid row p-0 m-0 h-100">
+            <aside class="col-sm-3 p-0 m-0">
+                <div class="card rounded-0 border-0">
+                    <button class="navbar-toggler card-group-item" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleExpansionId" aria-controls="collapsibleExpansionId"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <header class="card-header rounded-0">Expansion Sets</header>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="collapsibleExpansionId">
+                        <div class="filter-content">
+                            <div class="card-body" id="sets-chooser">
+
+                            </div>
+                        </div>
+                    </div>
+                    <button class="navbar-toggler card-group-item" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleTypeId" aria-controls="collapsibleTypeId"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <header class="card-header rounded-0">Card Type</header>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="collapsibleTypeId">
+                        <div class="filter-content">
+                            <div class="card-body" id="type-chooser">
+
+                            </div>
                         </div>
                     </div>
                 </div>
-                <button class="navbar-toggler card-group-item" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleColorId" aria-controls="collapsibleColorId"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <header class="card-header rounded-0">Cards color</header>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="collapsibleColorId">
-                    <div class="filter-content">
-                        <div class="card-body">
-                            <label class="btn btn-danger buttons">
-                                <input class="" type="checkbox" name="myradio" value="">
-                                <span class="form-check-label">Red</span>
-                            </label>
-                            <label class="btn btn-success buttons">
-                                <input class="" type="checkbox" name="myradio" value="">
-                                <span class="form-check-label">Green</span>
-                            </label>
-                            <label class="btn btn-primary buttons">
-                                <input class="" type="checkbox" name="myradio" value="">
-                                <span class="form-check-label">Blue</span>
-                            </label>
-                            <label class="btn btn-light buttons">
-                                <input class="" type="checkbox" name="myradio" value="">
-                                <span class="form-check-label">White</span>
-                            </label>
-                            <label class="btn btn-dark">
-                                <input class="" type="checkbox" name="myradio" value="">
-                                <span class="form-check-label">Black</span>
-                            </label>
-                        </div>
-                    </div>
+            </aside>
+            <div class="col-sm-9">
+                <div class="container-fluid row d-flex justify-content-center align-items-center flex-wrap g-2" id="cards-container">
+
                 </div>
+                <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                    <div class="col-md-4 d-flex align-items-center">
+                        <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Wizards of the Coast</span>
+                    </div>
+                    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa-brands fa-instagram fa-xl" style="color: #595C5F;"></i></a></li>
+                        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa-brands fa-twitter fa-xl" style="color: #595C5F;"></i></a></li>
+                        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa-brands fa-facebook fa-xl" style="color: #595C5F;"></i></a></li>
+                    </ul>
+                </footer>
             </div>
-        </aside>
+        </div>
     </body>
 </html>
